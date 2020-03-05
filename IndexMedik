@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Aun no sabemos que poner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- 
+        <h1 style="color: blue; font-family: Arial; font-size: 48px;">
+            Name Website
+        </h1> 
+        -->
+        <h1>Aun no sabemos que poner</h1>
+        <br>
+        
+        <form id="myform" name="myform" action="NameServlet" method="get">
+            Usuario: <input type="text" id="name" name="User"/>
+            <br><br>
+            Contraseña: <input type="text" id="Contra" name="Contra" />
+            <br><br>
+            <input type="submit" id="mysubmit" name="mysubmit" />
+        </form>
+    </body>
+</html>

@@ -20,6 +20,8 @@
             Contraseña: <input type="text" id="Contra" name="Contra" />
             <br><br>
             <input type="submit" id="mysubmit" name="mysubmit" />
+            
+            <input type="submit" id="mysubmit" name="registrate" />
         </form>
     </body>
 </html>

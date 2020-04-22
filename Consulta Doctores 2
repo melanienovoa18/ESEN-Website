@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Consulta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Datepicker - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+    </head>
+    <body>
+        <h1>Crea una cita</h1>
+        <form id="myform" name="myform" action="NameServlet" method="get">
+            Seleccione el doctor: <select id="doctor" name="doctor">
+                <option id="doctor1" name="doctor1" value="doctor1">Doctor 1</option>
+                <option id="doctor2" name="doctor2" value="doctor2">Doctor 2</option>
+            </select>
+            <br><br>
+            Ingrese sus síntomas: <br>
+            <textarea id="síntomas" rows="6" cols="50"></textarea>
+            <br><br>
+            ¿Posee alergias hacia ciertos medicamentos?: <br>
+            <textarea id="alergias" rows="6" cols="50"></textarea>
+            <br><br>
+            ¿Está actualmente consumiendo medicamentos?: <br>
+            <textarea id="medicamentos" rows="3" cols="50"></textarea>
+            <br><br>
+            ¿Posee algún padecimiento previamente detectado?: <br>
+            <textarea id="padecimiento" rows="3" cols="50"></textarea>
+            <br><br> 
+            Seleccione la fecha: <input type="text" id="datepicker">
+            <br><br>
+            Hora: <input type="time" id="appt" name="appt"
+                    accept=""min="09:00" max="18:00" required>
+            </select>
+            <br><br>
+            ¿Posee seguro?: <input type="text" id="seguro" name="seguro"/>
+            <br><br>
+            Seleccione forma de pago: <select id="tarjeta" name="tarjeta">
+                <option id="credito" name="credito" value="credito">Crédito</option>
+                <option id="debito" name="debito" value="debito">Débito</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enter" />
+    </body>
+</html>

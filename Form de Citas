@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Consulta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Crea una cita</h1>
+        <form id="myform" name="myform" action="NameServlet" method="get">
+            Seleccione el doctor: <select id="doctor" name="doctor">
+                <option id="doctor1" name="doctor1" value="doctor1">Doctor 1</option>
+                <option id="doctor2" name="doctor2" value="doctor2">Doctor 2</option>
+            </select>
+            <br><br>
+            Ingrese sus síntomas: <br>
+            <textarea id="síntomas" rows="6" cols="50"></textarea>
+            <br><br>
+            ¿Posee alergias hacia ciertos medicamentos?: <br>
+            <textarea id="alergias" rows="6" cols="50"></textarea>
+            <br><br>
+            ¿Está actualmente consumiendo medicamentos?: <br>
+            <textarea id="medicamentos" rows="3" cols="50"></textarea>
+            <br><br>
+            ¿Posee algún padecimiento previamente detectado?: <br>
+            <textarea id="padecimiento" rows="3" cols="50"></textarea>
+            <br><br> 
+            Seleccione la fecha: <input type="text" id="fecha" name="fecha"/>
+            <br><br>
+            Hora: <select id="hora" name="hora">
+                <option id="1" name="1" value="1">1:00</option>
+                <option id="2" name="2" value="2">2:00</option>
+                <option id="3" name="3" value="3">3:00</option>
+                <option id="4" name="4" value="4">4:00</option>
+                <option id="5" name="5" value="5">5:00</option>
+                <option id="6" name="6" value="6">6:00</option>
+                <option id="7" name="7" value="7">7:00</option>
+                <option id="8" name="8" value="8">8:00</option>
+                <option id="9" name="9" value="9">9:00</option>
+                <option id="10" name="10" value="10">10:00</option>
+                <option id="11" name="11" value="11">11:00</option>
+                <option id="12" name="12" value="12">12:00</option>
+            </select>
+            <select id="horario" name="horario">
+                <option id="am" name="am" value="am">a.m.</option>
+                <option id="pm" name="pm" value="pm">p.m.</option>
+            </select>
+            <br><br>
+            ¿Posee seguro?: <input type="text" id="seguro" name="seguro"/>
+            <br><br>
+            Seleccione forma de pago: <select id="tarjeta" name="tarjeta">
+                <option id="credito" name="credito" value="credito">Crédito</option>
+                <option id="debito" name="debito" value="debito">Débito</option>
+            </select>
+            <br><br>
+    </body>
+</html>

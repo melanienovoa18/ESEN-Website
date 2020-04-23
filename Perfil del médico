@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Perfil del Médico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>Perfil del Médico</h1>
+        
+        <div>
+            <img src="img_doc.jpg" alt="Doc 1" width="256" height="256">
+        </div>
+        <br>
+        <div>
+        <img src="img_doc.jpg" alt="Doc 2" width="256" height="256">
+        </div>
+        
+            <br><br>
+        Especialidad(es): <br>
+            <textarea id="especialidad" rows="3" cols="50"></textarea>
+            <br><br> 
+        Procedimientos: <br>
+            <textarea id="procedimientos" rows="3" cols="50"></textarea>
+            <br><br> 
+        Lugar de Especialización: <br>
+            <textarea id="especializacion" rows="3" cols="50"></textarea>
+            <br><br> 
+        Horarios de disponibilidad: <br>
+            <textarea id="disponibilidad" rows="3" cols="50"></textarea>
+            <br><br> 
+    </body>
+</html>

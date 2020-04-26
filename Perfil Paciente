@@ -1,0 +1,32 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Perfil Paciente</title>
+    </head>
+    <body>
+        <h1>Perfil Paciente</h1>
+        
+        <div>
+            <img src="img_paciente.jpg" alt="Doc 1" width="256" height="256">
+        </div>
+        <br><br>
+      
+        Nombre de Usuario: <br>
+            <textarea id="usuario" rows="1" cols="50"></textarea>
+            <br><br> 
+        Descripción: <br>
+            <textarea id="descripción" rows="3" cols="50"></textarea>
+            <br><br> 
+        Número de contacto: <br>
+            <textarea id="contacto" rows="1" cols="50"></textarea>
+            <br><br> 
+        Correo Electronico: <br>
+            <textarea id="correo" rows="1" cols="50"></textarea>
+            <br><br> 
+        Dirección: <br>
+            <textarea id="dirección" rows="3" cols="50"></textarea>
+            <br><br>
+    </body>
+</html>

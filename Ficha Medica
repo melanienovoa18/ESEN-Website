@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+         <h1> Crear Ficha Medica </h1>
+
+        <form id="myform" name="myform" action="NameServlet" method="get">
+            Nombres: <input type="text" id="name" name="Nombres"/>
+            <br><br>
+            
+            Apellidos: <input type="text" id="apellidos" name="Apellidos"/>
+            <br><br>
+            
+            Sexo: <select id="sexo" name="Sexo">
+                <option id="Masculino" name="Masculino" value="Masculino">Masculino</option>
+                <option id="Femenino" name="Femenino" value="Femenino">Femenino</option>
+            </select>
+            
+            Edad: <input type="text" id="edad" name="Edad"/>
+            <br><br>
+
+            Fecha de nacimiento: <select id="dia" name="dia">
+                <option id="1" name="1" value="1">1</option>
+                <option id="2" name="2" value="2">2</option>
+                <option id="3" name="3" value="3">3</option>
+            </select>
+            <select id="mes" name="mes">
+                <option id="enero" name="enero" value="enero">enero</option>
+                <option id="febrero" name="febrero" value="febrero">febrero</option>
+                <option id="marzo" name="marzo" value="marzo">marzo</option>
+                <option id="abril" name="abril" value="abril">abril</option>
+                <option id="mayo" name="mayo" value="mayo">mayo</option>
+                <option id="junio" name="junio" value="junio">junio</option>
+                <option id="julio" name="julio" value="julio">julio</option>
+                <option id="agosto" name="agosto" value="agosto">agosto</option>
+                <option id="septiembre" name="septiembre" value="septiembre">septiembre</option>
+                <option id="octubre" name="octubre" value="octubre">octubre</option>
+                <option id="noviembre" name="noviembre" value="noviembre">noviembre</option>
+                <option id="diciembre" name="diciembre" value="diciembre">diciembre</option>
+            </select>
+            <select id="año" name="año">
+                <option id="1990" name="1990" value="1990">1990</option>
+                
+            //agregar años hasta la fecha
+            </select>
+            <br><br>
+            
+            Estado Civil: <select id="estado civil" name="estado civil">
+                <option id="Casado" name="Casado/a" value="Casado">Casado</option>
+                <option id="Soltero" name="Soltero/a" value="Soltero">Soltero</option>
+            </select>
+            <br><br>
+            
+            Dirección de residencia: <input type="text" id="direccion" name="Dirección de residencia"/>
+            <br><br>
+            
+            Nacionalidad: <input type="text" id="nacionalidad" name="Nacionalidad"/>
+            <br><br>
+            
+            Escolaridad:  <input type="text" id="escolaridad" name="Escolaridad"/>
+            <br><br>
+            
+            Número de contacto: <input type="text" id="celular" name="celular"/>
+            <br><br>
+            
+            Correo electrónico:  <input type="text" id="correo" name="correo"/>
+            <br><br>
+     
+            Tipo de Sangre:  <input type="text" id="sangre" name="Tipo de sangre"/>
+            <br><br>
+            
+            Enfermedades genericas: <select id="Enfermedades" name="¿Posee alguna enfermedad generica?">
+                <option id="Si" name="Si" value="Si">Si</option>
+                <option id="No" name="No" value="No">No</option>
+            </select>
+            
+            ¿Que tipo de enfermedades genericas?:  <input type="text" id="enfermedadesg" name="¿Que tipo de enfermedades genericas?"/>
+            <br><br>
+            
+            Posee alguna alergia: <select id="alergia" name="¿Posee alguna alergia?">
+                <option id="Si" name="Si" value="Si">Si</option>
+                <option id="No" name="No" value="No">No</option>
+            </select>
+         
+            ¿Que tipo de alergia?: <input type="text" id="alergias" name="alergias"/>
+            <br><br>
+            
+            Toma algún medicamento: <select id="medicamento" name="¿Toma algún medicamento?">
+                <option id="Si" name="Si" value="Si">Si</option>
+                <option id="No" name="No" value="No">No</option>
+            </select>
+            
+            ¿Que tipo de medicamento?:  <input type="text" id="medicamentos" name="medicamentos"/>
+            <br><br>
+            
+            ¿Posee seguro?: <select id="seguro" name="¿Posee seguro?">
+                <option id="Si" name="Si" value="Si">Si</option>
+                <option id="No" name="No" value="No">No</option>
+            </select>
+            <br><br>
+            
+            <input type="submit" id="mysubmit" name="mysubmit" />
+        </form>
+    </body>
+</html>

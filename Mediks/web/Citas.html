@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Datepicker - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link href="styles/bulma/bulma.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+        
+    </head>
+    <body>
+        
+            
+            <section class="hero is-info is-large">
+                
+            <div class="hero-head">
+            <nav class="navbar">
+            <div class="container">
+                
+            <div class="navbar-brand">
+                
+            <a class="navbar-item">
+            <h1 class="title is-1">Medik's</h1>
+            </a>
+                
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+                
+            </div>
+                
+            <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+                
+            <a href="index.html" class="navbar-item is-active">
+              Inicio
+            </a>
+                
+            <a href="Doctores.html" class="navbar-item">
+              Doctores
+            </a>
+                
+            <a href="Registrarse.html" class="navbar-item">
+              Registrarse
+            </a>
+                
+            <a href="PerfilPaciente.html" class="navbar-item">
+              Perfil
+            </a>
+                
+            <a href="CitasDoctor.html" class="navbar-item">
+              Citas
+            </a>
+                            
+            <a href="infoCitas.jsp" class="navbar-item">
+              Historial
+            </a>
+                
+            <span class="navbar-item">
+              <a class="button is-info is-inverted">
+                <span>Iniciar Sesión
+              </a>
+            </span>
+                
+          </div>
+        </div>
+      </div>
+    </nav>   
+  </div>
+                
+        <form id="myform" name="myform" action="citasServlet" method="get">
+            <div class="field">
+                <label class="label">Seleccione un doctor</label>
+            <div class="control">
+            <div class="select">
+            <select id="doctor" name="doctor">
+                <option id="doctor1" name="doctor1" value="doctor1">Doc. Quetin</option>
+                <option id="doctor2" name="doctor2" value="doctor2">Doc. Porta</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            
+            <div class="field">
+            <label class="label">Síntomas:</label>
+            <div class="control">
+                <textarea id="síntomas" class="textarea" placeholder="Escriba aquí"></textarea>
+            </div>
+            </div>
+            
+            <div class="field">
+                <label class="label">¿Posee alergías a medicamentos?:</label>
+            <div class="control">
+                <label class="radio">
+                <input id="AlergiaSi" type="radio" name="question">
+                Si
+                </label>
+                
+                <label class="radio">
+                <input id="AlergiaNO" type="radio" name="question">
+                No
+                </label>
+            </div>
+            </div>
+            
+            
+            <div class="field">
+            <label class="label">En caso de haber seleccionado si, por favor especifique:</label>
+            <div class="control">
+                <textarea id="alergias" class="textarea" placeholder="Escriba aquí"></textarea>
+            </div>
+            </div>
+            
+            <div class="field">
+            <label class="label">Si ha consumido medicamentos, especifique:</label>
+            <div class="control">
+                <textarea id="Medicamento" class="textarea" placeholder="Escriba aquí"></textarea>
+            </div>
+            </div>
+            
+            <div class="field">
+            <label class="label">¿Posee algún padecimiento previamente detectado? Especifique:</label>
+            <div class="control">
+                <textarea id="Padecimiento" class="textarea" placeholder="Escriba aquí"></textarea>
+            </div>
+            </div>
+
+            <div class="field">
+            <label class="label">Seleccione la fecha:</label>
+            <div class="control">
+            <input type="text" id="datepicker">
+            </div>
+            </div>
+
+        <label class="label">Seleccione una hora:</label>
+        <div class="field is-grouped">
+        <div class="control">
+        <div class="select">
+        <select id="HoraCita" name="HoraCita">
+                <option id="7" name="7" value="7">7:00</option>
+                <option id="8" name="8" value="8">8:00</option>
+                <option id="9" name="9" value="9">9:00</option>
+                <option id="10" name="10" value="10">10:00</option>
+                <option id="11" name="11" value="11">11:00</option>
+                <option id="12" name="12" value="12">12:00</option>
+                <option id="13" name="13" value="13">13:00</option>
+                <option id="14" name="14" value="14">14:00</option>
+                <option id="15" name="15" value="15">15:00</option>
+                <option id="16" name="16" value="16">16:00</option>
+                <option id="17" name="17" value="17">17:00</option>
+        </select>
+        </div>
+        </div>
+        </div>
+        
+            <div class="field">
+                <label class="label">¿Posee sguro?:</label>
+            <div class="control">
+                <label class="radio">
+                <input id="SeguroSi" type="radio" name="question">
+                Si
+                </label>
+                
+                <label class="radio">
+                <input id="SeguroNO" type="radio" name="question">
+                No
+                </label>
+            </div>
+            </div>
+
+        <label class="label">Seleccione forma de pago:</label>
+        <div class="field is-grouped">
+        <div class="control">
+        <div class="select">
+        <select id="FormaPago" name="FormaPago">
+                <option id="Tarjeta" name="Tarjeta" value="Tarjeta">Tarjeta</option>
+                <option id="Dinero" name="Dinero" value="Dinero">Efectivo</option>
+        </select>
+        </div>
+        </div>
+        </div>
+        
+        <div class="field is-grouped">
+        <div class="control">
+        <button class="button is-link">Registrarse</button>
+        </div>
+            
+        <div class="control">
+        <button class="button is-link is-light">Cancelar</button>
+        </div>
+        </div>
+        
+    </body>
+</html>
